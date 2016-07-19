@@ -1,0 +1,61 @@
+body
+{
+	/*bgcolor & font colors taken from flatui colors*/
+	background-color: #2c3e50;
+	color: #ecf0f1;
+}
+
+#name{
+	/*size and positioning*/
+	display:	block;
+	text-align: center;
+	clear: 		right;
+	margin: 	0 auto;
+	
+	/*font & appearance*/
+	font-family: 'Bungee', cursive;
+	font-size: 64px;
+}
+
+#descContainer{
+	display: 	block;
+	float: 		left;
+	clear: 		none;
+	width: 		33%;
+	margin-left:10%;
+	
+}
+
+#descHeader, #description{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#descHeader{
+	/*
+		48px while description is hidden
+		shrinks to 32px when clicked
+	*/
+	font-size: 48px;
+}
+#description{
+	/*
+		0px / hidden
+		14px once description is expanded
+	*/
+	font-size: 14px;
+	/* keep the description more contained */
+	padding: 10px;
+	opacity: 0;
+}
+
+#descLine1{
+	list-style: none;
+}
+
+.highlight{
+	/*
+		Highlights words and phrases in yellow, using spans
+		Applied to specific words in descriptions and headers when active
+	*/
+	color: #f39c12;
+}
