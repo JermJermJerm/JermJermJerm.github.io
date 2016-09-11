@@ -21,9 +21,9 @@ body
 	display: 	block;
 	float: 		left;
 	clear: 		none;
-	width: 		33%;
+	width: 		10%; /*10% not expanded, 33% when expanded*/
 	margin-left:10%;
-	
+	height: 72px;
 }
 
 #descHeader, #description{
@@ -35,7 +35,7 @@ body
 		48px while description is hidden
 		shrinks to 32px when clicked
 	*/
-	font-size: 48px;
+	font-size: 72px;
 }
 #description{
 	/*

@@ -20,23 +20,25 @@ $("#descHeader").on("click", function(){
 			TweenMax.to($("#descHeader"), .25	, {fontSize: "32px", color: highlight});
 			
 			//make the description container larger
-			TweenMax.to("#descContainer", .25, {height: "100px"});
+			TweenMax.to("#descContainer", .25, {height: "100px", width:"33%"});
 			
 			//change the description size
-			TweenMax.to("#description", .25, {opacity:"255"});
+			TweenMax.to("#description", 1, {delay:.25, opacity:"255"});
 			
 			//Change state before exiting
 			isExpanded = true;
 		}
 		else if(isExpanded){
-			//enlarge the header size
-			TweenMax.to("#descHeader", .25, {fontSize: "48px", color: clouds});
-			
-			//make the description container smaller
-			TweenMax.to("#descContainer", .25, {height: "60px"});
+			//Shrink the container...
 			
 			//change the description size
 			TweenMax.to("#description", .25, {opacity: 0});
+			
+			//make the description container smaller
+			TweenMax.to("#descContainer", .25, {delay: .25, height: "72px", width:"10%"});
+			
+			//enlarge the header size
+			TweenMax.to("#descHeader", .25, {delay: .26, fontSize: "72px", color: clouds});
 			
 			//Change state before exiting
 			isExpanded = false;
