@@ -1,0 +1,5 @@
+-Generate a script for use in BASH (probably)
+-styles
+-add support for other shells like ksh
+
+functionality is always the priority
