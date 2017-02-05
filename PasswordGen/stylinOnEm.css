@@ -1,0 +1,67 @@
+body{
+	margin: 0 auto;
+}
+
+#headerBlock{
+	width: 350px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+h1, #credit{
+	text-align: middle;
+	margin: 0;
+}
+
+#iyw{
+	text-align: right;
+	margin: 0px;
+}
+
+#description{
+	width: 400px;
+	margin: 50px auto;
+	border: 1px black solid;
+	padding: 5px;
+}
+
+h2{
+	text-align: center;
+}
+
+#parameters{
+	border: 1px black solid;
+	width: 300px;
+	margin: 10px auto;
+	height: 250px;
+	
+}
+label{
+	display: block;
+	float: left;
+	clear: left;
+	margin: 5px;
+}
+
+input{
+	display: block;
+	float: left;
+	margin: 5px;
+}
+
+hr{
+	height: 1px;
+	width: 150px;
+	display: block;
+	clear: both;
+	background-color: black;
+	margin: 0 auto;
+}
+
+#generateButton{
+	display: block;
+	clear: both;
+	margin: 0 auto;
+	height: 40px;
+	width: 100px;
+}
