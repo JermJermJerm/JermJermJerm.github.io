@@ -1,0 +1,64 @@
+body{
+	background-color: gray;
+}
+
+#me{
+	display: block;
+	margin: 0 auto;
+	width: 75px;
+	text-align: center;
+	font-size: 12px;
+	background-color: white;
+}
+
+#yourBlock{
+	display: block;
+	float: middle;
+	margin: 0 auto;
+	width: 200px;
+	
+	background-color: white;
+	border: 1px black solid;
+}
+
+#your{
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+input{
+	text-align: center;
+	font: 14px "serif";
+}
+
+
+#instructionsBlock{
+	display: block;
+	margin: 0 auto;
+	width: 500px;
+	
+	text-align: center;
+}
+
+#blockContainer{
+	display: block;
+	margin: 0 auto;
+	
+	border: 1px black solid;
+	height: 100px;
+	width: 690px;
+	
+	background-color: white;
+}
+
+.littleBlock{
+	display: block;
+	float: left;
+	margin: 0 auto;
+	
+	height: 100px;
+	width: 200px;
+	padding: 0 15px;
+	
+	text-align: center;
+}

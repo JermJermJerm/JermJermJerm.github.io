@@ -1,6 +1,0 @@
--Generate a script for use in BASH (probably)
--styles
--automatic CIDR translation to fill in IPv4, default gateway, and subnet fields
--add support for other shells like ksh
-
-functionality is always the priority
