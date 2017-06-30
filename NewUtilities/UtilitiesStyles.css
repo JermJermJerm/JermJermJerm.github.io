@@ -1,0 +1,73 @@
+#formContainer{
+	display: block;
+	margin: 0 auto;
+	
+	height: 600px;
+	border: 1px solid green;
+	
+	
+}
+
+ul{
+	display: block;
+	width: 1303px;
+	
+	margin: 0 auto;
+	border: 1px black solid;
+	padding-left: 0;
+	
+	text-align: center;
+}
+
+#AClist{
+	height: 180px;
+}
+
+
+li{
+	list-style-type: none;
+}
+
+.ACli{ 	
+	display: block;
+	float: left;
+	
+	margin: 0 auto;
+	
+	margin: 2.5px 5px;
+	width: 250px;
+}
+
+.ACli:nth-of-type(6), .ACli:nth-of-type(11), .ACli:nth-of-type(1){
+	clear: left;
+}
+
+
+.AClabel{
+	padding-left: 15px;
+	float: left;
+	cursor: hand;
+	cursor: pointer;
+}
+
+
+.ACin{
+	text-align: center;
+	width: 45px;
+	display: block;
+	float: right;
+}
+
+.on{
+	color: green;
+}
+
+.off{
+	color: red;
+}
+
+#submitButton{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
