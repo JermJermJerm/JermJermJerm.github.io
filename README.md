@@ -10,16 +10,16 @@ This repo is where I throw all of my small projects, whether they're finished or
 
 As of August 3, 2017, projects include
 
-cases: some string manipulation, all caps, all lower, and exploded w spaces
+* **cases:** some string manipulation, all caps, all lower, and exploded w spaces
 also allows you to distinguish a lowercase L from a capital i
 
-mini: minify text, and then copy it with a click of a button
+* **mini:** minify text, and then copy it with a click of a button
 just wanted to see if I could do it
 
-NewUtilities: datacenter utilities app. don't worry bout it
+* **NewUtilities:** datacenter utilities app. don't worry bout it
 
-StupidDumb: translate text into emojis, specifically regional-indicators
+* **StupidDumb:** translate text into emojis, specifically regional-indicators
 stolen/adapted idea from a friend, originally made in C++, but I couldn't download his executable :/
 
-suns: splits randomizer prototype in the making
+* **suns:** splits randomizer prototype in the making
 aimed to make speedrunning IL practice less repetitive
