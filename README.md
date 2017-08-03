@@ -1,12 +1,25 @@
 # JermJermJerm.github.io
-Kind of an online portfolio.
-Mostly just a place to put the things I make.
-I really need to get into the habit of using github more.
-
-# This Site
-
-Primarily made with JQuery and GreenSock Animation Platform's TweenMax package.
+This is a part time online portfolio, part time free web host
 
 
-GSAP: https://greensock.com/gsap
-JQuery: http://jquery.com/
+
+# About
+This repo is where I throw all of my small projects, whether they're finished or not - but mostly finished
+
+[scripts and styles folders are not projects, they're just for the home page]
+
+As of August 3, 2017, projects include
+
+cases: some string manipulation, all caps, all lower, and exploded w spaces
+also allows you to distinguish a lowercase L from a capital i
+
+mini: minify text, and then copy it with a click of a button
+just wanted to see if I could do it
+
+NewUtilities: datacenter utilities app. don't worry bout it
+
+StupidDumb: translate text into emojis, specifically regional-indicators
+stolen/adapted idea from a friend, originally made in C++, but I couldn't download his executable :/
+
+suns: splits randomizer prototype in the making
+aimed to make speedrunning IL practice less repetitive
