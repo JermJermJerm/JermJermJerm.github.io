@@ -1,17 +1,57 @@
-/*
-	isExpanded is used for sections that are only headers on load.
-	This is defaulted to false on load.
-	If the section header is shrunk and highlighted, isExpanded is true.
-	IF the section header is large and white, and the description is hidden, isExpanded is false.
-*/
-var isExpanded = false;
-var highlight = "#f39c12";
-var clouds = "#ecf0f1";
-// Header hover animation?
+$(document).ready(function(){
+	
+	var highlight = "#f39c12";
+	var clouds = "#ecf0f1";
+	
+	var whoExpanded = false;
+	var whatExpanded = false;
 
+	// Header hover animation?
 
+	var showDesc = function(element){
+		var that = element;
+		
+		$(element).css("font-size", "48px"); //shrink header from 72->48
+		$(element).css("color", highlight);
+		$(element).siblings(".description").css("display", "block");
+	};
 
-// When the description header / Who? is clicked..
+	var hideDesc = function(element){
+		var that = element;
+		
+		$(element).css("font-size", "72px"); //return header from 72->48
+		$(element).css("color", clouds);
+		$(element).siblings(".description").css("display", "none");
+	};
+	
+	
+	/*
+	will have to do css( this : value) ?	
+	*/
+
+	$(".descHeader").on("click", function(){
+		switch(true){
+			case ($(this).is("#who") && whoExpanded == true):
+				hideDesc(this);
+				whoExpanded = false;
+				break;
+			case ($(this).is("#who") && whoExpanded == false):
+				showDesc(this);
+				whoExpanded = true;
+				break;
+			case ($(this).is("#what") && whatExpanded == true):
+				hideDesc(this);
+				whatExpanded = false;
+				break;
+			case ($(this).is("#what") && whatExpanded == false):
+				showDesc(this);
+				whatExpanded = true;
+				break;
+		};
+	});
+
+});
+/* When the description header / Who? is clicked..
 $("#descHeader").on("click", function(){
 		if(isExpanded == false){
 			//Expand the container...
@@ -44,3 +84,4 @@ $("#descHeader").on("click", function(){
 			isExpanded = false;
 		}
 });
+*/

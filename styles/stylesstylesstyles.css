@@ -13,49 +13,35 @@ body
 	margin: 	0 auto;
 	
 	/*font & appearance*/
-	font-family: 'Bungee', cursive;
 	font-size: 64px;
 }
 
-#descContainer{
-	display: 	block;
-	float: 		left;
-	clear: 		none;
-	width: 		10%; /*10% not expanded, 33% when expanded*/
-	margin-left:10%;
-	height: 72px;
+
+/*Actual container for each header and description*/
+.descContainer{
+	display: 		block;
+	float: 			left;
+	clear: 			none;
+	width: 			30%; /*10% not expanded, 33% when expanded*/
+	margin-left:	10%;
+	height: 		200px;
+	
+	/*border: 		1px #ecf0f1 solid;*/
 }
 
-#descHeader, #description{
-	font-family: 'Open Sans', sans-serif;
-}
 
-#descHeader{
-	/*
-		48px while description is hidden
-		shrinks to 32px when clicked
-	*/
+.descHeader{
+	cursor: pointer;
 	font-size: 72px;
 }
-#description{
-	/*
-		0px / hidden
-		14px once description is expanded
-	*/
+
+.description{
 	font-size: 14px;
-	/* keep the description more contained */
+	display: none;
 	padding: 10px;
-	opacity: 0;
 }
 
-#descLine1{
-	list-style: none;
-}
 
 .highlight{
-	/*
-		Highlights words and phrases in yellow, using spans
-		Applied to specific words in descriptions and headers when active
-	*/
 	color: #f39c12;
 }
