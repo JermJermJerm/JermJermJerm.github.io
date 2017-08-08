@@ -1,0 +1,44 @@
+<html>
+<head>
+	<!-- JQuery 3.1.1 https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js-->
+	<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<script language="javascript"  type="text/javascript" src="scripts.js"></script>
+	
+	<link href="styles.css" type="text/css" rel="stylesheet"/>
+	
+</head>
+
+<body>
+	<h1>Remove Space, Explode Strings</h1>
+	
+	<p id="description">
+		Enter text, specify the delimiter to split the string with, click Explode
+	</p>
+	
+	<textarea id="inputArea" placeholder="input,text,that,looks,like,this,here"></textarea>
+	
+	<div id="smalldiv"> 
+		<input type="text" id="delimiter" placeholder="delimiter here"/>
+		<button id="explodeButt">Explode</button>
+	</div>
+	
+	<ol id="explodeUL">
+		<li>input</li>
+		<li>text</li>
+		<li>that</li>
+		<li>looks</li>
+		<li>like</li>
+		<li>this</li>
+	</ol>
+	
+	
+	<p id="sampletext">
+	PATH=C:\PROGRAMDATA\ORACLE\JAVA\JAVAPATH;C:\WINDOWS\SYSTEM32;C:\WINDOWS;C:\WINDOWS\SYSTEM32\WBEM;C:\WINDOWS\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES\OPENVPN\BIN;C:\PROGRAM FILES (X86)\MICROSOFT SQL SERVER\110\TOOLS\BINN\;C:\PROGRAM FILES\MICROSOFT SQL SERVER\110\TOOLS\BINN\;C:\PROGRAM FILES\MICROSOFT SQL SERVER\110\DTS\BINN\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Users\Jeremy\AppData\Local\Programs\Python\Launcher\
+	</p>
+	<p id="instructions">
+	Try using this as input text with <span id="example">;</span> as the delimiter
+	</p>
+	
+</body>
+</html>
