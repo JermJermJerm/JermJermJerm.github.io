@@ -23,3 +23,7 @@ stolen/adapted idea from a friend, originally made in C++, but I couldn't downlo
 
 * **suns:** splits randomizer prototype in the making
 aimed to make speedrunning IL practice less repetitive
+
+* **RemoveSpacesExplodeStrings:** Split strings with a specified delimiter
+originally made so I could see where I should put cURL on my work pc because paths were all in one string separated by semicolons,
+and therefore hard to read.
