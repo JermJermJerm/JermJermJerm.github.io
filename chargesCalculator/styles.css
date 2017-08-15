@@ -1,0 +1,47 @@
+body{
+	background-color: steelblue;
+}
+
+h1, h2, #tMonths{
+	color: white;
+}
+
+#fatWrapper{
+	display: block;
+	margin: 0 auto;
+	width: 850px;
+}
+
+#headerBlock{
+	display: block;
+	margin: 10px auto;
+	width: 100%;
+	text-align: center;
+}
+
+#months{
+	width: 25px;
+}
+
+.chargeDiv{
+	display: block;
+	float: left;
+	margin: 0 25px;
+	
+	width: 350px;
+	text-align: center;
+	
+	border: 3px black solid;
+}
+
+.charge{
+	width: 250px;
+}
+
+.chargeName{
+	word-break: keep-all;
+}
+
+.total{
+	color: MediumSpringGreen;
+}

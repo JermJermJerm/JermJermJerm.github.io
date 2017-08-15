@@ -1,0 +1,54 @@
+<html>
+<head>
+	<!-- JQuery 3.1.1 https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js-->
+	<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<script language="javascript"  type="text/javascript" src="scripts.js"></script>
+	
+	<link href="styles.css" type="text/css" rel="stylesheet"/>
+	
+</head>
+
+<body>
+	<div id="fatWrapper">
+	
+	<div id="headerBlock">
+		<h1>Billing Calculator</h1>
+
+		<p class="totalP" id="OTCT">One Time Charge Total: $<span class="total" id="OTCTotal">0</span></p>
+		<p class="totalP" id="MRCT">Monthly Recurring Charge Total: $<span class="total" id="MRCTotal">0</span></p>
+		<p class="totalP" id="TOTT">Total due after <span id="tMonths">0</span> months: $<span class="total" id="tTotal">0</span></p>
+		<button id="calculateTotal">Calculate EVERYTHING</button>
+	</div>
+	
+	<div id="Odiv" class="chargeDiv">
+		<h2>One Time Charges</h2>
+		<button id="addOTC">Add line item</button>
+		<button id="calculateOTC">Calculate</button>
+		<ol id="OTC">
+			<li class="charge one">
+				<p class="chargeName">Click here to change description</p>
+				<input class="desc" type="hidden" placeholder="Click here to change description"/>
+				<input class="OTCin" type="text"/>
+			</li>
+		</ol>
+	</div>
+	
+	<div id="Mdiv" class="chargeDiv">
+		<h2>Monthly Recurring Charges</h2>
+		<label>Months:</label>
+		<input id="months" type="text"/>
+		<button id="addMRC">Add line item</button>
+		<button id="calculateMRC">Calculate</button>
+		<ol id="MRC">
+			<li class="charge monthly">
+				<p class="chargeName">Click here to change description</p>
+				<input class="desc" type="hidden" placeholder="Click here to change description"/>
+				<input class="MRCin" type="text"/>
+			</li>
+		</ol>
+	</div>
+	
+	</div>
+</body>
+</html>
