@@ -27,3 +27,7 @@ aimed to make speedrunning IL practice less repetitive
 * **RemoveSpacesExplodeStrings:** Split strings with a specified delimiter
 originally made so I could see where I should put cURL on my work pc because paths were all in one string separated by semicolons,
 and therefore hard to read.
+
+* **chargesCalculator:** A simple calculator for determining how much you would have to pay in one-time costs and recurring payments (payment plans) over a given amount of time - separately and equal. 
+In my example, months are used as the period of time.
+This tool could be useful for calculating things like bills (car, phone, cable, rent), budgets, or estimating profits.
