@@ -165,16 +165,11 @@ $(document).ready(function(){
 		if(ActiveShines.length != 0){
 			var shineNum = Math.round(Math.random() * (ActiveShines.length-1));
 			
-			console.log(ActiveShines[shineNum]);
+			$("#practiceShine").text(ActiveShines[shineNum]);
 		} else {
-			console.log("no shines selected");
+			alert("No shines selected");
 		}
 		
-		/*
-		for(var i = 0; i <= shines.length-1; i++){
-			console.log("i = " + i);
-			console.log(shines[i]);
-		}*/
 	
 	});
 });

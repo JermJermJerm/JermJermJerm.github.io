@@ -10,13 +10,24 @@
 </head>
 
 <body>
+	<div id="thispageheaderrighthere">
+		Made by Jerm | <a href="https://github.com/JermJermJerm/JermJermJerm.github.io/tree/master/suns">view on girth hub</a>
+	</div>
+
+	<div id="topContainer">
 	<h1>Super Mario Sunshine Speedrun Split Randomizer</h1>
 	<p>Created for random, not-so-repetitive practice</p>
 
-	<button id="random">Click this</button>
-	<img src="" alt="Practice Area" id="AreaPic"/>
-	<h2 id="Level_en"></h2>
+	<label>Click this button to generate a random shine to practice</label>
+	<button id="random">Randomize shine</button>
 	
+	<!--not displayed for the moment - will be a picture of the corresponding practiceShine area-->
+	<img id="practicePic" src="" alt="Practice Area" />
+	
+	<h2 id="practiceHeader">You should practice <span id="practiceShine">Super Mario Sunshine</span></h2>
+	</div>
+	
+	<div id="fatContainer">
 	<ul id="areas">
 		<li><input type="checkbox" class="area" id="BH">Bianco Hills</input></li>
 		<li><input type="checkbox" class="area" id="GB">Gelato Beach</input></li>
@@ -25,10 +36,14 @@
 		<li><input type="checkbox" class="area" id="RH">Ricco Harbor</input></li>
 		<li><input type="checkbox" class="area" id="SB">Sirena Beach</input></li>
 		<li><input type="checkbox" class="area" id="NB">Noki Bay</input></li>
+		<li><input type="checkbox" class="area" id="SK">Skips</input></li>
 	</ul>
 	
+	</br>
+	
 	<ul id="shines">
-		
+	
+		<div class="shineArea" id="BiancoShines">
 		<li><input type="checkbox" class="bianco shine" value="Bianco 1">Bianco 1</input></li>
 		<li><input type="checkbox" class="bianco shine" value="Bianco 2">Bianco 2</input></li>
 		<li><input type="checkbox" class="bianco shine" value="Bianco 3">Bianco 3</input></li>
@@ -36,10 +51,14 @@
 		<li><input type="checkbox" class="bianco shine" value="Bianco 5">Bianco 5</input></li>
 		<li><input type="checkbox" class="bianco shine" value="Bianco 6">Bianco 6</input></li>
 		<li><input type="checkbox" class="bianco shine SM" value="Bianco 7">Bianco 7</input></li>
+		</div>
 		
-		<li><input type="checkbox" class="gelato shine skip" value="Gelato 1 (Gelato Skip)">Gelato 1 (Gelato Skip)</input></li>
+		<div class="shineArea" id="GelatoShines">
+		<li><input type="checkbox" class="gelato shine skip" value="Gelato 1">Gelato 1</input></li>
 		<li><input type="checkbox" class="gelato shine SM" value="Gelato 7">Gelato 7</input></li>
+		</div>
 		
+		<div class="shineArea" id="PiantaShines">
 		<li><input type="checkbox" class="pianta shine" value="Pianta 1">Pianta 1</input></li>
 		<li><input type="checkbox" class="pianta shine" value="Pianta 2">Pianta 2</input></li>
 		<li><input type="checkbox" class="pianta shine" value="Pianta 3">Pianta 3</input></li>
@@ -47,9 +66,9 @@
 		<li><input type="checkbox" class="pianta shine" value="Pianta 5">Pianta 5</input></li>
 		<li><input type="checkbox" class="pianta shine" value="Pianta 6">Pianta 6</input></li>
 		<li><input type="checkbox" class="pianta shine SM" value="Pianta 7">Pianta 7</input></li>
+		</div>
 		
-		<li><input type="checkbox" class="skip" value="Honey Skip">Honey Skip</input></li>
-		
+		<div class="shineArea" id="PinnaShines">
 		<li><input type="checkbox" class="pinna shine" value="Pinna 1">Pinna 1</input></li>
 		<li><input type="checkbox" class="pinna shine" value="Pinna 2">Pinna 2</input></li>
 		<li><input type="checkbox" class="pinna shine" value="Pinna 3">Pinna 3</input></li>
@@ -57,7 +76,9 @@
 		<li><input type="checkbox" class="pinna shine" value="Pinna 5">Pinna 5</input></li>
 		<li><input type="checkbox" class="pinna shine" value="Pinna 6">Pinna 6</input></li>
 		<li><input type="checkbox" class="pinna shine SM" value="Pinna 7">Pinna 7</input></li>
+		</div>
 		
+		<div class="shineArea" id="RiccoShines">
 		<li><input type="checkbox" class="ricco shine" value="Ricco 1">Ricco 1</input></li>
 		<li><input type="checkbox" class="ricco shine" value="Ricco 2">Ricco 2</input></li>
 		<li><input type="checkbox" class="ricco shine" value="Ricco 3">Ricco 3</input></li>
@@ -65,7 +86,9 @@
 		<li><input type="checkbox" class="ricco shine" value="Ricco 5">Ricco 5</input></li>
 		<li><input type="checkbox" class="ricco shine" value="Ricco 6">Ricco 6</input></li>
 		<li><input type="checkbox" class="ricco shine SM" value="Ricco 7">Ricco 7</input></li>
+		</div>
 		
+		<div class="shineArea" id="SirenaShines">
 		<li><input type="checkbox" class="sirena shine" value="Sirena 1">Sirena 1</input></li>
 		<li><input type="checkbox" class="sirena shine" value="Sirena 2">Sirena 2</input></li>
 		<li><input type="checkbox" class="sirena shine" value="Sirena 3">Sirena 3</input></li>
@@ -73,7 +96,9 @@
 		<li><input type="checkbox" class="sirena shine" value="Sirena 5">Sirena 5</input></li>
 		<li><input type="checkbox" class="sirena shine" value="Sirena 6">Sirena 6</input></li>
 		<li><input type="checkbox" class="sirena shine SM" value="Sirena 7">Sirena 7</input></li>
+		</div>
 		
+		<div class="shineArea" id="NokiShines">
 		<li><input type="checkbox" class="noki shine" value="Noki 1">Noki 1</input></li>
 		<li><input type="checkbox" class="noki shine" value="Noki 2">Noki 2</input></li>
 		<li><input type="checkbox" class="noki shine" value="Noki 3">Noki 3</input></li>
@@ -81,6 +106,14 @@
 		<li><input type="checkbox" class="noki shine" value="Noki 5">Noki 5</input></li>
 		<li><input type="checkbox" class="noki shine" value="Noki 6">Noki 6</input></li>
 		<li><input type="checkbox" class="noki shine SM" value="Noki 7">Noki 7</input></li>
+		</div>
+		
+		<div class="shineArea" id="SkipsNotShines">
+		<li><input type="checkbox" class="skip" value="Honey Skip">Honey Skip</input></li>
+		<li><input type="checkbox" class="gelato shine skip" value="Gelato Skip">Gelato Skip</input></li>
+		<li><input type="checkbox" class="skip" value="EYG">EYG (Early Yoshi Go-round)</input></li>
+		</div>
 	</ul>
+	</div>
 </body>
 </html>

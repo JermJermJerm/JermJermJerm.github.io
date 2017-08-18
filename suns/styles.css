@@ -1,0 +1,67 @@
+body{
+	background-color: teal;
+}
+
+#thispageheaderrighthere{
+	font-size: 12px;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: -10px;
+	text-align: center;
+	border-width: 0 1px 1px 1px;
+	border-color: black;
+	border-style: solid;
+	
+	background-color: cadetblue;
+	color: white;
+}
+
+a{
+	color: white;
+}
+
+#topContainer{
+	display: block;
+	clear: both;
+	height: 25%;
+	width: 70%;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+#practicePic{
+	display: none;
+	width: 200px;
+}
+
+#fatContainer{
+	display: block;
+	clear: both;
+	height: 50%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+ul{
+	display: block;
+	clear: both;
+	padding: 0 auto;
+	margin: 25px auto;
+}
+
+li{
+	list-style: none;
+}
+
+#areas{
+	margin: 0;
+}
+
+#areas li, .shineArea{
+	display: block;
+	float: left;
+	
+	width: 120px;
+	
+	border: 1px black solid;
+}
