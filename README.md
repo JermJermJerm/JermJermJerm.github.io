@@ -8,7 +8,7 @@ This repo is where I throw all of my small projects, whether they're finished or
 
 [scripts and styles folders are not projects, they're just for the home page]
 
-As of August 3, 2017, projects include
+As of August 18, 2017, projects include
 
 * **cases:** some string manipulation, all caps, all lower, and exploded w spaces
 also allows you to distinguish a lowercase L from a capital i
