@@ -1,18 +1,26 @@
-body
-{
+body{
+	
 	/*bgcolor & font colors taken from flatui colors*/
 	background-color: #2c3e50;
 	color: #ecf0f1;
 }
 
-#name{
+a:link, a:visited, a:hover, a:active{
+	color: #3498db;
+	text-decoration: none;
+}
+
+#name, h4{
+	
 	/*size and positioning*/
 	display:	block;
 	text-align: center;
 	clear: 		right;
 	margin: 	0 auto;
 	
-	/*font & appearance*/
+}
+
+#name{
 	font-size: 64px;
 }
 
@@ -23,6 +31,7 @@ body
 	float: 			left;
 	clear: 			none;
 	width: 			30%; /*10% not expanded, 33% when expanded*/
+	margin: 10px;
 	margin-left:	10%;
 	height: 		200px;
 	
@@ -32,7 +41,8 @@ body
 
 .descHeader{
 	cursor: pointer;
-	font-size: 72px;
+	font-size: 60px;
+	margin-bottom: 10px;
 }
 
 .description{
