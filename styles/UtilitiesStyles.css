@@ -1,0 +1,187 @@
+#formContainer{
+	display: block;
+	margin: 0 auto;
+	
+	height: 600px;
+	
+	
+}
+
+#ACs, #UPSes, #PDUSTS{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.sectionHeader{
+	margin-top: 0;
+}
+
+ul{
+	display: block;
+	width: 1303px;
+	height: 200px;
+	margin: 0 auto;
+	border: 1px black solid;
+	padding-left: 0;
+	
+	text-align: center;
+}
+
+#AClist{
+	height: 180px;
+}
+
+
+li{
+	list-style-type: none;
+}
+
+.ACli{ 	
+	display: block;
+	float: left;
+	
+	margin: 0 auto;
+	
+	margin: 2.5px 5px;
+	width: 250px;
+}
+
+.ACli:nth-of-type(6), .ACli:nth-of-type(11), .ACli:nth-of-type(1){
+	clear: left;
+}
+
+
+.AClabel{
+	padding-left: 15px;
+	float: left;
+	cursor: hand;
+	cursor: pointer;
+	text-align: right;
+}
+
+
+.ACin{
+	text-align: center;
+	width: 45px;
+	display: block;
+	float: left;
+}
+
+.ACin:nth-of-type(2+5n){
+	margin-left: 5px;
+}
+
+.on{
+	color: green;
+}
+
+.off{
+	color: red;
+}
+
+.UPSlabel{
+	display: block;
+	clear: both;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#UPSliContainer{
+	display: block;
+	margin: 0 auto;
+	width: 848px;
+	height: 100px;
+}
+
+.UPSli{
+	width: 200px;
+	height: 110px;
+	border: 1px solid green;
+	display: block;
+	float: left;
+	
+	margin: 0 5px;
+}
+
+.UPSSubLabel{
+	padding-left: 5px;
+	display: block;
+	clear: left;
+	float: left;
+	width: 45px;
+	margin: 2.5px 0;
+}
+.UPSin{
+	text-align: center;
+	width: 45px;
+	display: block;
+	float: left;
+	margin: 2.5px 0;
+}
+
+.UPSin:nth-of-type(2), .UPSin:nth-of-type(5), .UPSin:nth-of-type(8){
+	margin-left: 5px;
+}
+
+/*pdustuff*/
+
+#PDUlist{
+	height: 150px;
+}
+
+#PDUliContainer{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.PDUli{
+	display: block;
+	float: left;
+	width: 200px;
+}
+
+.PDUli:nth-of-type(4){
+	clear: left;
+}
+
+.PDUlabel{
+	display: block;
+	float: left;
+	text-align: right;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.PDUin{
+	display: block;
+	float: left;
+	text-align: center; 
+	width: 50px;
+	margin: 0;
+}
+
+#lastUL{
+	display: block;
+	margin: 0 auto;
+}
+
+#lastUL div{
+	width: 33%;
+	display: block;
+	float: left;
+}
+
+h4{
+	margin-bottom: 0;
+}
+
+#notes{
+	height: 100px;
+	width: 300px;
+}
+
+#submitButton{
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+}

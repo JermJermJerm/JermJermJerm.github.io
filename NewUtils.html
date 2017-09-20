@@ -1,0 +1,321 @@
+<html>
+<head>
+	<!-- JQuery 3.1.1 https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js-->
+	<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script language="javascript"  type="text/javascript" src="./scripts/UtilitiesScripts.js"></script>
+	
+	<link href="./styles/UtilitiesStyles.css" type="text/css" rel="stylesheet"/>
+	
+</head>
+
+<body>
+
+	<div id="headerDiv">
+		<!--Fix later and use a local image if and when this goes live-->
+		<h1>Utilities<h1>
+		<h3>Hover over each of the section headers to expand</h3>
+		
+	</div>
+
+	<!--
+		Use a container within the form for better appearance I guess
+		lets us style the form and the rest of the page separately
+	<image src="" alt="NJ1 Datacenter floorplan">
+	
+	TODO: tooltips of locations
+	-->
+	
+	
+	
+	<div id="formContainer">
+		<form id="Utilities" method="POST" action="submit_AC.php">
+			
+			<ul id="AClist">
+				<h3 id="ACs">ACs</h3>
+				<p class="sectionHeader" id="acHeader">
+					AC labels: <span class="on">Green</span> means on, <span class="off">Red</span> means off
+					<br/>
+					Click on an AC label to turn it on or off.
+				</p>
+				<li class="ACli">
+					<label class="AClabel on">AC-4</label>
+					<input type="hidden" value="on" id="AC4OnOff" name="AC4OnOff" class="ACOnOff">
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC4temp">
+					
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC4rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC4dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC4econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-01</label>
+					<input type="hidden" value="on" id="AC01OnOff" name="AC01OnOff" class="ACOnOff">
+					
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC01temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC01rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC01dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC01econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-17</label>
+					<input type="hidden" value="on" id="AC17OnOff" name="AC17OnOff" class="ACOnOff">
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC17temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC17rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC17dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC17econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-16</label>
+					<input type="text" placeholder="Temp" class="ACin temp" name="AC16temp">
+					<input type="text" placeholder="RH" class="ACin rh" name="AC16rh">
+					<input type="text" placeholder="DX" class="ACin dx" name="AC16dx">
+					<input type="text" placeholder="ECON" class="ACin econ" name="AC16econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-1</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC1temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC1rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC1dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC1econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-6</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC6temp">
+					<input type="text" placeholder="RH" class="ACin rh" name="AC6rh">
+					<input type="text" placeholder="DX" class="ACin dx" name="AC6dx">
+					<input type="text" placeholder="ECON" class="ACin econ" name="AC6econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-1A</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC1Atemp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC1Arh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC1Adx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC1Aecon">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-11</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC11temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC11rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC11dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC11econ">	
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-10</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC10temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC10rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC10dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC10econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-2</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC2temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC2rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC2dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC2econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-3</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC3temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC3rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC3dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC3econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-13</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC13temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC13rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC13dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC13econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-15</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC15temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC15rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC15dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC15econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-7</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC7temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC7rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC7dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC7econ">
+				</li>
+				
+				<li class="ACli">
+					<label class="AClabel on">AC-12</label>
+					<input type="text" placeholder="Temp" class="ACin temp on" name="AC12temp">
+					<input type="text" placeholder="RH" class="ACin rh on" name="AC12rh">
+					<input type="text" placeholder="DX" class="ACin dx on" name="AC12dx">
+					<input type="text" placeholder="ECON" class="ACin econ on" name="AC12econ">
+				</li>
+			</ul>
+			
+			<ul id="UPSlist">
+				<h3 id="UPSes">UPSes</h3>
+				<p class="sectionHeader" id="acHeader">
+					UPS labels: <span class="on">Green</span> means on, <span class="off">Red</span> means off
+					<br/>
+					Click on a UPS label to turn it on or off.
+				</p>
+				<div id="UPSliContainer">
+				<li class="UPSli">
+					<label class="UPSlabel on">UPS-1</label>
+					<input type="hidden" value="on" id="UPS1OnOff" name="UPS1OnOff" class="UPSOnOff">
+					
+					<label class="UPSSubLabel">Values:</label>
+					<input type="text" placeholder="KVA" class="UPSin KVA on" name="UPS1KVA">
+					<input type="text" placeholder="KW" class="UPSin KW on" name="UPS1KW">
+					<input type="text" placeholder="Load" class="UPSin Load on" name="UPS1Load">
+					
+					<label class="UPSSubLabel">Input:</label>
+					<input type="text" placeholder="A" class="UPSin InA on" name="UPS1InA">
+					<input type="text" placeholder="B" class="UPSin InB on" name="UPS1InB">
+					<input type="text" placeholder="C" class="UPSin InC on" name="UPS1InC">
+					
+					<label class="UPSSubLabel">Bypass In:</label>
+					<input type="text" placeholder="A" class="UPSin ByA on" name="UPS1ByA">
+					<input type="text" placeholder="B" class="UPSin ByB on" name="UPS1ByB">
+					<input type="text" placeholder="C" class="UPSin ByC on" name="UPS1ByC">
+				</li>
+				
+				<li class="UPSli">
+					<label class="UPSlabel on">UPS-2</label>
+					<input type="hidden" value="on" id="UPS2OnOff" name="UPS2OnOff" class="UPSOnOff">
+					
+					<label class="UPSSubLabel">Values:</label>
+					<input type="text" placeholder="KVA" class="UPSin KVA on" name="UPS2KVA">
+					<input type="text" placeholder="KW" class="UPSin KW on" name="UPS2KW">
+					<input type="text" placeholder="Load" class="UPSin Load on" name="UPS2Load">
+					
+					<label class="UPSSubLabel">Input:</label>
+					<input type="text" placeholder="A" class="UPSin InA on" name="UPS2InA">
+					<input type="text" placeholder="B" class="UPSin InB on" name="UPS2InB">
+					<input type="text" placeholder="C" class="UPSin InC on" name="UPS2InC">
+					
+					<label class="UPSSubLabel">Bypass In:</label>
+					<input type="text" placeholder="A" class="UPSin ByA on" name="UPS2ByA">
+					<input type="text" placeholder="B" class="UPSin ByB on" name="UPS2ByB">
+					<input type="text" placeholder="C" class="UPSin ByC on" name="UPS2ByC">
+				</li>
+				
+				<li class="UPSli">
+					<label class="UPSlabel on">UPS-3</label>
+					<input type="hidden" value="on" id="UPS3OnOff" name="UPS3OnOff" class="UPSOnOff">
+					
+					<label class="UPSSubLabel">Values:</label>
+					<input type="text" placeholder="KVA" class="UPSin KVA on" name="UPS3KVA">
+					<input type="text" placeholder="KW" class="UPSin KW on" name="UPS3KW">
+					<input type="text" placeholder="Load" class="UPSin Load on" name="UPS3Load">
+					
+					<label class="UPSSubLabel">Input:</label>
+					<input type="text" placeholder="A" class="UPSin InA on" name="UPS3InA">
+					<input type="text" placeholder="B" class="UPSin InB on" name="UPS3InB">
+					<input type="text" placeholder="C" class="UPSin InC on" name="UPS3InC">
+					
+					<label class="UPSSubLabel">Bypass In:</label>
+					<input type="text" placeholder="A" class="UPSin ByA on" name="UPS3ByA">
+					<input type="text" placeholder="B" class="UPSin ByB on" name="UPS3ByB">
+					<input type="text" placeholder="C" class="UPSin ByC on" name="UPS3ByC">
+				</li>
+				
+				<li class="UPSli">
+					<label class="UPSlabel on">UPS-4</label>
+					<input type="hidden" value="on" id="UPS4OnOff" name="UPS4OnOff" class="UPSOnOff">
+					
+					<label class="UPSSubLabel">Values:</label>
+					<input type="text" placeholder="KVA" class="UPSin KVA on" name="UPS4KVA">
+					<input type="text" placeholder="KW" class="UPSin KW on" name="UPS4KW">
+					<input type="text" placeholder="Load" class="UPSin Load on" name="UPS4Load">
+					
+					<label class="UPSSubLabel">Input:</label>
+					<input type="text" placeholder="A" class="UPSin InA on" name="UPS4InA">
+					<input type="text" placeholder="B" class="UPSin InB on" name="UPS4InB">
+					<input type="text" placeholder="C" class="UPSin InC on" name="UPS4InC">
+					
+					<label class="UPSSubLabel">Bypass In:</label>
+					<input type="text" placeholder="A" class="UPSin ByA on" name="UPS4ByA">
+					<input type="text" placeholder="B" class="UPSin ByB on" name="UPS4ByB">
+					<input type="text" placeholder="C" class="UPSin ByC on" name="UPS4ByC">
+				</li>
+				</div>
+			</ul>
+			
+			<ul id="PDUlist">
+				<h3 id="PDUSTS"><span id="PDUs">PDUs</span> and <span id="STSes">STSes</span></h3>
+				<p class="sectionHeader" id="PDUheader">
+					PDU and STS labels: <span class="on">Green</span> means on, <span class="off">Red</span> means off
+					<br/>
+					Click on a label to turn it on or off.
+				</p>
+				
+				<div id="PDUliContainer">
+				<li class="PDUli">
+					<label class="PDUlabel on">STS-11A</label>
+					<input type="hidden" value="on" id="STS11A" name="STS11AOnOff" class="PDUOnOff">
+					<input type="text" placeholder="KVA" class="PDUin KVA on " name="STS11AKVA">
+					<input type="text" placeholder="KW" class="PDUin KW on" name="STS11AKW">					
+				</li>
+				
+				<li class="PDUli">
+					<label class="PDUlabel on">STS-11B</label>
+					<input type="hidden" value="on" id="STS11A" name="STS11BOnOff" class="PDUOnOff">
+					<input type="text" placeholder="KVA" class="PDUin KVA on" name="STS11BKVA">
+					<input type="text" placeholder="KW" class="PDUin KW on" name="STS11BKW">					
+				</li>
+				<li class="PDUli">
+					<label class="PDUlabel on">PDU-D</label>
+					<input type="hidden" value="on" id="PDUD" name="PDUDOnOff" class="PDUOnOff">
+					<input type="text" placeholder="KVA" class="PDUin KVA on" name="PDUDKVA">
+					<input type="text" placeholder="KW" class="PDUin KW on" name="PDUDKW">					
+				</li>
+				
+				<li class="PDUli">
+					<label class="PDUlabel on">PDU-M</label>
+					<input type="hidden" value="on" id="PDUM" name="PDUMOnOff" class="PDUOnOff">
+					<input type="text" placeholder="KVA" class="PDUin KVA on" name="PDUMKVA">
+					<input type="text" placeholder="KW" class="PDUin KW on" name="PDUMKW">					
+				</li>
+				<li class="PDUli">
+					<label class="PDUlabel on">PDU-C</label>
+					<input type="hidden" value="on" id="PDUD" name="PDUCOnOff" class="PDUOnOff">
+					<input type="text" placeholder="KVA" class="PDUin KVA on" name="PDUCKVA">
+					<input type="text" placeholder="KW" class="PDUin KW on" name="PDUCKW">					
+				</li>
+				<li class="PDUli">
+					<label class="PDUlabel on">PDU-13B</label>
+					<input type="hidden" value="on" id="PDUD" name="PDU13BOnOff" class="PDUOnOff">
+					<input type="text" placeholder="KVA" class="PDUin KVA on" name="PDU13BKVA">
+					<input type="text" placeholder="KW" class="PDUin KW on" name="PDU13BKW">					
+				</li>
+				</div>
+			</ul>
+			
+			<ul id="lastUL">
+				<div>
+					<h4>Notes:	</h4>
+					<textarea id="notes" name="notes"></textarea>
+					<h3 id="remainingItems"></h3>
+				</div>
+				<div>
+					<input type="submit" value="Submit" id="submitButton">
+				</div>
+			</ul>
+			
+		</form>
+	</div>
+
+</body>
+</html>
