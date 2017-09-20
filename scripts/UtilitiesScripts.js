@@ -48,7 +48,7 @@ $(document).ready(function(){
 			$(this).siblings().filter(".ACOnOff").val("off");
 			$(this).siblings().filter(".ACin").val("0");
 			$(this).siblings().filter(".ACin").attr("disabled", "disabled");
-			$(this).siblings().filter(".ACin").hide();
+			//$(this).siblings().filter(".ACin").hide();
 			$(this).siblings().filter(".ACin").removeClass("on").addClass("off");
 			
 			updateCounter();
@@ -59,7 +59,7 @@ $(document).ready(function(){
 			$(this).siblings().filter(".ACOnOff").val("on");
 			$(this).siblings().filter(".ACin").val("");
 			$(this).siblings().filter(".ACin").removeAttr("disabled");
-			$(this).siblings().filter(".ACin").show();
+			//$(this).siblings().filter(".ACin").show();
 			$(this).siblings().filter(".ACin").removeClass("off").addClass("on");
 			
 			updateCounter();
