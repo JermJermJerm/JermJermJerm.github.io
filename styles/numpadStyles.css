@@ -1,0 +1,39 @@
+#leftBlock{
+	display: block;
+	border: 3px black solid;
+	width: 48%;
+	float: left;
+	
+	overflow-y: scroll;
+}
+
+#rightBlock{
+	display: block;
+	border: 3px black solid;
+	width: 48%;
+	float: right;
+}
+
+tr{
+	border: 1px black solid;
+}
+
+td{
+	border: 1px black solid;
+	height: 50px;
+	width: 50px;
+}
+
+td p{
+	text-align: center;
+	font-size: 25px;
+	color: orange;
+}
+
+td p:hover{
+	color: green;
+}
+
+td p:active{
+	color: blue;
+}
