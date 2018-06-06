@@ -32,4 +32,4 @@ stolen/adapted idea from a friend, originally made in C++, but I couldn't downlo
 * **SunsSR:** splits randomizer prototype in the making
 aimed to make speedrunning IL practice less repetitive
 
-
+* **LiveSplit Dashboard:** A web-based dashboard for controlling LiveSplit via the LiveSplit Server component.

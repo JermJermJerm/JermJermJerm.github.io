@@ -10,6 +10,7 @@ $(document).ready(function(){
 	var MINExpanded = false; //minifier
 	var CASExpanded = false; //cases
 	var SDExpanded = false; //StupidDumb
+	var LSDBExpanded = false; //LiveSplitDashboard
 	var NPExpanded = false; //Numpad
 
 	// Header hover animation?
@@ -91,11 +92,14 @@ $(document).ready(function(){
 				showDesc(this);
 				SDExpanded = true;
 				break;
+			case ($(this).is("#LiveSplitDashboard") && LSDBExpanded == true):
+				showDesc(this);
+				LSDBExpanded = false;
+				break;
 			case ($(this).is("#numpad") && NPExpanded == false):
 				showDesc(this);
 				NPExpanded = true;
 				break;
-			
 				
 		};
 	});
