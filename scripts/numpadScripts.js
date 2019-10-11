@@ -17,4 +17,9 @@ $(document).ready(function(){
 		
 	}));
 	
+	$(".clearButt").on('click', function(){
+		$(this).siblings($(".numField").val(''));
+		console.log('clearing ' + $(this).siblings($(".numField")).attr('name'));
+	});
+	
 });
