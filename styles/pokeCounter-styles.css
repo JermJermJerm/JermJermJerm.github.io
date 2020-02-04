@@ -1,0 +1,14 @@
+h1, h2{
+	text-align: center;
+}
+
+#EncounterBox, #CatchBox{
+	display: block;
+	float: left;
+	width: 25%;
+	border: 1px black solid;
+	text-align: center;
+}
+#EncounterBox{
+	margin-left: 25%;
+}
