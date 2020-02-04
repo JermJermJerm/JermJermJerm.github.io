@@ -12,3 +12,7 @@ h1, h2{
 #EncounterBox{
 	margin-left: 25%;
 }
+
+#CatchBox h3{
+	color: red;
+}
