@@ -12,6 +12,7 @@ $(document).ready(function(){
 	var SDExpanded = false; //StupidDumb
 	var LSDBExpanded = false; //LiveSplitDashboard
 	var NPExpanded = false; //Numpad
+	var hadesExpanded = false; //Hades
 
 	// Header hover animation?
 
@@ -93,14 +94,29 @@ $(document).ready(function(){
 				SDExpanded = true;
 				break;
 			case ($(this).is("#LiveSplitDashboard") && LSDBExpanded == true):
-				showDesc(this);
+				hideDesc(this);
 				LSDBExpanded = false;
+				break;
+			case ($(this).is("#LiveSplitDashboard") && LSDBExpanded == false):
+				showDesc(this);
+				LSDBExpanded = true;
 				break;
 			case ($(this).is("#numpad") && NPExpanded == false):
 				showDesc(this);
 				NPExpanded = true;
 				break;
-				
+			case ($(this).is("#numpad") && NPExpanded == true):
+				hideDesc(this);
+				NPExpanded = false;
+				break;
+			case ($(this).is("#hades") && hadesExpanded == false):
+				showDesc(this);
+				hadesExpanded = true;
+				break;
+			case ($(this).is("#hades") && hadesExpanded == true):
+				hideDesc(this);
+				hadesExpanded = false;
+				break;		
 		};
 	});
 

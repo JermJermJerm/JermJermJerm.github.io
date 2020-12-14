@@ -1,3 +1,8 @@
+::selection {
+    color: none;
+    background: none;
+}
+
 body{
 	
 	/*bgcolor & font colors taken from flatui colors*/
