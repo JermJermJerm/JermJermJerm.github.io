@@ -1,0 +1,115 @@
+::selection {
+    color: none;
+    background: none;
+}
+
+#boonExample{
+	padding: 10px;
+	height: 200px;
+	outline: 1px black solid;
+	margin: 0 33% 0 33%;
+	
+	display: block;
+	float: left;
+	clear: all;
+}
+h2, h3{
+	text-align: center;
+}
+#resetAttack:hover{
+	color: red;
+}
+#resetAttack:active{
+	color: blue;
+}
+
+.example{
+	display: block;
+	float: left;
+	padding: 0;
+	margin-left: 5px;
+}
+
+.boon{
+	width: 100px;
+	height: 100px;
+	font-weight: bold;
+}
+ul li{
+	font-weight: bold;
+}
+
+.boon p{
+	margin: 0;
+	margin-top: 33%;
+	padding: 0;
+	text-align: center;
+}
+
+.common{
+	border: 3px #bdc3c7 solid;
+	color: #bdc3c7 
+	/*silver*/
+}
+.rare{
+	border: 3px #2980b9 solid;
+	color: #2980b9;
+	/*belize hole*/
+}
+.epic{
+	border: 3px #8e44ad solid;
+	color: #8e44ad;
+	/*wisteria*/
+}
+.heroic{
+	border: 3px #e74c3c solid;
+	color: #e74c3c;
+	/*alizarin*/
+}
+.legendary{
+	border: 3px #e67e22 solid;
+	color: #e67e22;
+	/*carrot*/
+}
+.duo{
+	border: 3px #27ae60 solid;
+	color: #27ae60;
+	/*nephritis*/
+}
+
+#equippedBoons{
+	border: 1px black solid;
+	height: 600px;
+	width: 300px;
+	
+	display:block;
+	float: left;
+}
+
+#tier1{
+	border: 3px grey solid; 
+	width: 106px;
+	height: 530px;
+	
+	display: block;
+	float: left;
+	margin-left: 2%;
+	margin-top: 5%;
+}
+#boonSelect{
+	border: 3px red solid; 
+	width: 300px;
+	
+	display: block;
+	float: left;
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+ul{
+	list-style: none;
+}
+li{
+	padding: 0;
+	margin: 5px 10px
+}
